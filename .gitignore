@@ -1,0 +1,34 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.uv-cache/
+.mplconfig/
+
+# Data and trained models
+data/*
+!data/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+!checkpoints/best_results
+*.pt
+*.pth
+*.ckpt
+
+# Temporary experiment outputs
+
+logs/
+wandb/
+mlruns/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

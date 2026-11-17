@@ -1,0 +1,43 @@
+[project]
+name = "cvhw1"
+version = "0.1.0"
+description = "Generative-model homework experiments and shared PyTorch utilities"
+readme = "readme.md"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+    "tqdm>=4.70.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "pytest>=9.2.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["shared*", "flows*", "vae*", "gan*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+# PyPI provides CPU-only Windows builds. Keep CUDA enabled after uv sync/run.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu134", marker = "sys_platform == 'win32'" }]
+torchvision = [{ index = "pytorch-cu134", marker = "sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu134"
+url = "https://download.pytorch.org/whl/cu134"
+explicit = true

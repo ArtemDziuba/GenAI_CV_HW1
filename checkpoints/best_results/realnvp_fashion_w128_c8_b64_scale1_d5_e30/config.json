@@ -1,0 +1,57 @@
+{
+  "arguments": {
+    "dataset": "fashion_mnist",
+    "data_root": "data",
+    "output": "checkpoints\\realnvp_fashion_w128_c8_b64_scale1_d5_e30",
+    "download": false,
+    "device": "cuda",
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "hidden_channels": 128,
+    "conditioner_depth": 5,
+    "num_scales": 2,
+    "couplings_per_scale": 8,
+    "scale_limit": 1.0,
+    "logit": true,
+    "logit_alpha": 1e-05,
+    "validation_fraction": 0.1,
+    "num_workers": 0,
+    "seed": 42,
+    "deterministic": false,
+    "train_limit": null,
+    "validation_limit": null,
+    "sample_count": 64,
+    "sample_every": 5,
+    "evaluate_test": false
+  },
+  "model": {
+    "input_shape": [
+      1,
+      28,
+      28
+    ],
+    "hidden_channels": 128,
+    "num_scales": 2,
+    "couplings_per_scale": 8,
+    "scale_limit": 1.0,
+    "conditioner_depth": 5
+  },
+  "preprocessing": {
+    "logit": true,
+    "alpha": 1e-05,
+    "bits": 8
+  },
+  "runtime": {
+    "device": "cuda",
+    "torch_version": "2.15.0+cu134",
+    "cuda_version": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "split_sizes": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000
+  },
+  "likelihood": "uniform-dequantization bound; nats/image; 8-bit bin correction included"
+}

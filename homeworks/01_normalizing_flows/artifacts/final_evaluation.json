@@ -1,0 +1,76 @@
+{
+  "realnvp_mnist_w128_c8_b64_scale1_d5_e30": {
+    "dataset": "mnist",
+    "checkpoint": "checkpoints/realnvp_mnist_w128_c8_b64_scale1_d5_e30/best.pt",
+    "checkpoint_sha256": "07ce9203ad6487a9d981f38b032649c1afab2bf7b27e029d9ab53a2a8d25ebdb",
+    "selected_epoch": 28,
+    "model_config": {
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "hidden_channels": 128,
+      "num_scales": 2,
+      "couplings_per_scale": 8,
+      "scale_limit": 1.0,
+      "conditioner_depth": 5
+    },
+    "parameter_count": 10392816,
+    "validation": {
+      "nll": 582.9145763346354,
+      "bpd": 1.0726632251784052
+    },
+    "test": {
+      "nll": 580.6332636230469,
+      "bpd": 1.0684652168420203
+    },
+    "test_examples": 10000,
+    "batch_size": 64,
+    "dequantization_seed": 43,
+    "dequantization_draws_per_image": 1,
+    "evaluated_at_utc": "2026-11-17T14:42:29.767482+00:00",
+    "device": "cuda",
+    "torch_version": "2.15.0+cu134",
+    "cuda_version": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "training_performed": false
+  },
+  "realnvp_fashion_w128_c8_b64_scale1_d5_e30": {
+    "dataset": "fashion_mnist",
+    "checkpoint": "checkpoints/realnvp_fashion_w128_c8_b64_scale1_d5_e30/best.pt",
+    "checkpoint_sha256": "40242c0220d2d4fd4ccf7dd38a6a8fef5b5715bf7fcfb3079bea3a916967b1e2",
+    "selected_epoch": 27,
+    "model_config": {
+      "input_shape": [
+        1,
+        28,
+        28
+      ],
+      "hidden_channels": 128,
+      "num_scales": 2,
+      "couplings_per_scale": 8,
+      "scale_limit": 1.0,
+      "conditioner_depth": 5
+    },
+    "parameter_count": 10392816,
+    "validation": {
+      "nll": 1555.5485171305338,
+      "bpd": 2.862477208579594
+    },
+    "test": {
+      "nll": 1556.5342742919922,
+      "bpd": 2.864291171549437
+    },
+    "test_examples": 10000,
+    "batch_size": 64,
+    "dequantization_seed": 43,
+    "dequantization_draws_per_image": 1,
+    "evaluated_at_utc": "2026-11-17T14:42:40.523291+00:00",
+    "device": "cuda",
+    "torch_version": "2.15.0+cu134",
+    "cuda_version": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "training_performed": false
+  }
+}
