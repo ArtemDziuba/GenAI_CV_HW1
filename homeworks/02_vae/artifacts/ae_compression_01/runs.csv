@@ -1,0 +1,12 @@
+ae_loss,batch_size,best_epoch,beta,conv_depth,dataset,deterministic,epochs,flow_hidden_dim,flow_hidden_layers,flow_steps,grad_clip,hidden_channels,hidden_dim,latent_dim,learning_rate,likelihood,model,observation_std,parameters,run,scale_limit,seed,train_size,validation_fraction,validation_grayscale_mae,validation_grayscale_mse,validation_objective,validation_size,weight_decay
+mse,64,30,,1,fashion_mnist,False,30,,,0,0.0,16,64,32,0.001,none,ae,,223489,checkpoints/vae/ae_fashion_mnist_z32_c16_h64_d1_e30,,42,54000,0.1,0.04232053862915685,0.007811663718205334,6.124344482441743,6000,0.0
+mse,64,27,,1,fashion_mnist,False,30,,,0,0.0,32,256,32,0.001,none,ae,,1692385,checkpoints/vae/ae_fashion_mnist_z32_c32_h256_d1_e30,,42,54000,0.1,0.03742804465536028,0.006438122522148963,5.047488165418307,6000,0.0
+mse,64,28,,1,fashion_mnist,False,30,,,0,0.0,32,256,64,0.001,none,ae,,1708801,checkpoints/vae/ae_fashion_mnist_z64_c32_h256_d1_e30,,42,54000,0.1,0.03274209626220788,0.004880755995371146,3.8265127779046693,6000,0.0
+mse,64,30,,2,fashion_mnist,False,30,,,0,0.0,32,256,64,0.001,none,ae,,1801153,checkpoints/vae/ae_fashion_mnist_z64_c32_h256_d2_e30,,42,54000,0.1,0.033035798431684575,0.005014410873821665,3.9312982062250375,6000,0.0
+mse,64,29,,1,mnist,False,30,,,0,0.0,16,128,16,0.001,none,ae,,424305,checkpoints/vae/ae_mnist_z16_c16_h128_d1_e30,,42,54000,0.1,0.02449078736656035,0.006033006200047869,4.729876957535744,6000,0.0
+mse,64,30,,1,mnist,False,30,,,0,0.0,16,64,16,0.001,none,ae,,221425,checkpoints/vae/ae_mnist_z16_c16_h64_d1_e30,,42,54000,0.1,,0.006696502016469216,5.25005768772463,6000,0.0
+l1,64,1,,1,mnist,False,30,,,0,0.0,16,64,16,0.001,none,ae,,221425,checkpoints/vae/ae_mnist_z16_c16_h64_d1_l1_e30,,42,54000,0.1,0.13053541480656713,0.11186009990920623,102.33976730124155,6000,0.0
+mse,64,30,,2,mnist,False,30,,,0,0.0,16,64,16,0.001,none,ae,,244561,checkpoints/vae/ae_mnist_z16_c16_h64_d2_e30,,42,54000,0.1,,0.006002897204394685,4.706271502797803,6000,0.0
+mse,64,26,,1,mnist,False,30,,,0,0.0,32,256,16,0.001,none,ae,,1684177,checkpoints/vae/ae_mnist_z16_c32_d1_base_e30,,42,54000,0.1,,0.005494052390369082,4.307337162340681,6000,0.0
+mse,64,29,,1,mnist,False,30,,,0,0.0,16,64,32,0.001,none,ae,,223489,checkpoints/vae/ae_mnist_z32_c16_h64_d1_e30,,42,54000,0.1,0.01891561538268191,0.0036713568452978506,2.8783438270290693,6000,0.0
+mse,64,29,,1,mnist,False,30,,,0,0.0,32,256,64,0.001,none,ae,,1708801,checkpoints/vae/ae_mnist_z64_c32_h256_d1_e30,,42,54000,0.1,0.013034696278278716,0.0017652966716923402,1.3839926191767056,6000,0.0

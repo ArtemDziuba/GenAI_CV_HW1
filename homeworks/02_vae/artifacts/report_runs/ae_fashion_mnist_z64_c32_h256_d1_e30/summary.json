@@ -1,0 +1,9 @@
+{
+  "best_epoch": 28,
+  "selection_metric": "grayscale_mse",
+  "validation": {
+    "objective": 3.8265127779046693,
+    "grayscale_mae": 0.03274209626220788,
+    "grayscale_mse": 0.004880755995371146
+  }
+}

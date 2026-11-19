@@ -1,0 +1,542 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "objective": -142.65186009922735,
+      "negative_elbo": -200.98238929133944,
+      "reconstruction_nll": -259.3129187358132,
+      "kl": 58.33052929437074,
+      "grayscale_mse": 0.02105780635983791
+    },
+    "validation": {
+      "objective": -636.6294715131124,
+      "negative_elbo": -701.2713690217336,
+      "reconstruction_nll": -765.9132670230865,
+      "kl": 64.64189794286092,
+      "grayscale_mse": 0.008134328119214235
+    },
+    "seconds": 14.370166200009407
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "objective": -680.3976290416011,
+      "negative_elbo": -745.3824719895257,
+      "reconstruction_nll": -810.3673150730486,
+      "kl": 64.98484308193348,
+      "grayscale_mse": 0.0070002963100867215
+    },
+    "validation": {
+      "objective": -713.7512552922567,
+      "negative_elbo": -777.9065550142924,
+      "reconstruction_nll": -842.0618551162084,
+      "kl": 64.15529991340637,
+      "grayscale_mse": 0.006191762134452195
+    },
+    "seconds": 14.603042899994762
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "objective": -727.7892696516249,
+      "negative_elbo": -793.0041698582967,
+      "reconstruction_nll": -858.2190699624662,
+      "kl": 65.21490015206514,
+      "grayscale_mse": 0.0057795882970342605
+    },
+    "validation": {
+      "objective": -735.8842458101908,
+      "negative_elbo": -800.9504529927572,
+      "reconstruction_nll": -866.0166600710551,
+      "kl": 65.06620710372925,
+      "grayscale_mse": 0.00558067016362717
+    },
+    "seconds": 14.263841300009517
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "objective": -748.7601646024916,
+      "negative_elbo": -813.8306849570804,
+      "reconstruction_nll": -878.9012049928241,
+      "kl": 65.07052016533746,
+      "grayscale_mse": 0.005251982823653465
+    },
+    "validation": {
+      "objective": -751.0221279169718,
+      "negative_elbo": -814.3514509913126,
+      "reconstruction_nll": -877.6807746098837,
+      "kl": 63.32932328605652,
+      "grayscale_mse": 0.005283116227112866
+    },
+    "seconds": 14.260453399998369
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "objective": -761.8535491002401,
+      "negative_elbo": -826.7114780262135,
+      "reconstruction_nll": -891.5694065293912,
+      "kl": 64.85792868974474,
+      "grayscale_mse": 0.0049288144120035685
+    },
+    "validation": {
+      "objective": -762.7652079467773,
+      "negative_elbo": -826.4690012690227,
+      "reconstruction_nll": -890.172794921875,
+      "kl": 63.70379355239868,
+      "grayscale_mse": 0.004964442238143723
+    },
+    "seconds": 14.44645830000809
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "objective": -770.5707488606771,
+      "negative_elbo": -835.1093268749096,
+      "reconstruction_nll": -899.6479051573011,
+      "kl": 64.53857816229926,
+      "grayscale_mse": 0.004722730264916512
+    },
+    "validation": {
+      "objective": -772.5861675669353,
+      "negative_elbo": -837.6462900683085,
+      "reconstruction_nll": -902.7064119669596,
+      "kl": 65.06012206013997,
+      "grayscale_mse": 0.0046447071348375175
+    },
+    "seconds": 14.4199351999996
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "objective": -778.1730290935658,
+      "negative_elbo": -842.3782235625938,
+      "reconstruction_nll": -906.5834179920621,
+      "kl": 64.20519440015157,
+      "grayscale_mse": 0.004545803923261162
+    },
+    "validation": {
+      "objective": -771.9938401107788,
+      "negative_elbo": -835.0534638175965,
+      "reconstruction_nll": -898.1130878219604,
+      "kl": 63.059623992919924,
+      "grayscale_mse": 0.00476188376415909
+    },
+    "seconds": 14.38488860000507
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "objective": -783.3072270882218,
+      "negative_elbo": -847.1625325814706,
+      "reconstruction_nll": -911.0178382165697,
+      "kl": 63.85530556007668,
+      "grayscale_mse": 0.004432680955618573
+    },
+    "validation": {
+      "objective": -779.7607875493368,
+      "negative_elbo": -843.4336002782186,
+      "reconstruction_nll": -907.1064134750367,
+      "kl": 63.67281302769979,
+      "grayscale_mse": 0.004532462189536697
+    },
+    "seconds": 14.440594400002738
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "objective": -788.4922890689991,
+      "negative_elbo": -852.1543633698358,
+      "reconstruction_nll": -915.8164377386305,
+      "kl": 63.66207433262578,
+      "grayscale_mse": 0.004310267709403113
+    },
+    "validation": {
+      "objective": -783.6956675160726,
+      "negative_elbo": -846.7181156024933,
+      "reconstruction_nll": -909.7405641918183,
+      "kl": 63.02244845644633,
+      "grayscale_mse": 0.00446526446872546
+    },
+    "seconds": 14.444557299997541
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "objective": -792.3105659804168,
+      "negative_elbo": -855.6110216024894,
+      "reconstruction_nll": -918.911477154202,
+      "kl": 63.30045560695507,
+      "grayscale_mse": 0.004231312610317319
+    },
+    "validation": {
+      "objective": -781.9080376358032,
+      "negative_elbo": -844.7698773091635,
+      "reconstruction_nll": -907.6317170511882,
+      "kl": 62.861839619954424,
+      "grayscale_mse": 0.004519061595114181
+    },
+    "seconds": 14.416483299995889
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "objective": -796.1825118392662,
+      "negative_elbo": -859.3149656928733,
+      "reconstruction_nll": -922.4474195792586,
+      "kl": 63.13245382068775,
+      "grayscale_mse": 0.004141110003773334
+    },
+    "validation": {
+      "objective": -786.8402294476826,
+      "negative_elbo": -851.2463627255758,
+      "reconstruction_nll": -915.6524974428812,
+      "kl": 64.40613423411051,
+      "grayscale_mse": 0.004314449843378194
+    },
+    "seconds": 14.283072299993364
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "objective": -799.7257015869706,
+      "negative_elbo": -862.5503413135388,
+      "reconstruction_nll": -925.3749807058264,
+      "kl": 62.82463951972679,
+      "grayscale_mse": 0.004066427329525511
+    },
+    "validation": {
+      "objective": -786.1756039644877,
+      "negative_elbo": -848.7077567278544,
+      "reconstruction_nll": -911.2399103507995,
+      "kl": 62.53215322462718,
+      "grayscale_mse": 0.004427015852027883
+    },
+    "seconds": 14.148231900006067
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "objective": -802.7217919601158,
+      "negative_elbo": -865.2750034164146,
+      "reconstruction_nll": -927.8282150354738,
+      "kl": 62.553211559931434,
+      "grayscale_mse": 0.004003844814586854
+    },
+    "validation": {
+      "objective": -790.0203046658834,
+      "negative_elbo": -851.8578416277568,
+      "reconstruction_nll": -913.6953784497579,
+      "kl": 61.83753699938456,
+      "grayscale_mse": 0.004364376330864616
+    },
+    "seconds": 14.381057799997507
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "objective": -805.6292917132907,
+      "negative_elbo": -867.9450244158992,
+      "reconstruction_nll": -930.2607569520738,
+      "kl": 62.315732617625486,
+      "grayscale_mse": 0.003941790177111721
+    },
+    "validation": {
+      "objective": -792.5852701009114,
+      "negative_elbo": -854.9184210205078,
+      "reconstruction_nll": -917.2515713589986,
+      "kl": 62.3331507358551,
+      "grayscale_mse": 0.004273657140137705
+    },
+    "seconds": 14.35446370000136
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "objective": -808.1367709089209,
+      "negative_elbo": -870.30443783753,
+      "reconstruction_nll": -932.4721048909646,
+      "kl": 62.16766698883198,
+      "grayscale_mse": 0.003885378244309794
+    },
+    "validation": {
+      "objective": -790.1003360417684,
+      "negative_elbo": -852.8000956090291,
+      "reconstruction_nll": -915.4998555984497,
+      "kl": 62.69975993347168,
+      "grayscale_mse": 0.004318343758301732
+    },
+    "seconds": 14.380972400002065
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "objective": -810.0229177852207,
+      "negative_elbo": -872.0023361908242,
+      "reconstruction_nll": -933.9817544031497,
+      "kl": 61.979418252167875,
+      "grayscale_mse": 0.003846866770905089
+    },
+    "validation": {
+      "objective": -794.8967812474568,
+      "negative_elbo": -857.0958187026978,
+      "reconstruction_nll": -919.294856918335,
+      "kl": 62.199038036982216,
+      "grayscale_mse": 0.004221532525451039
+    },
+    "seconds": 14.466328599999542
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "objective": -812.7480704419171,
+      "negative_elbo": -874.5016809141371,
+      "reconstruction_nll": -936.2552912741767,
+      "kl": 61.75361044911985,
+      "grayscale_mse": 0.0037888683885043805
+    },
+    "validation": {
+      "objective": -798.7884560572306,
+      "negative_elbo": -860.1700510737102,
+      "reconstruction_nll": -921.5516461486816,
+      "kl": 61.381595238367716,
+      "grayscale_mse": 0.004163961379289201
+    },
+    "seconds": 14.566307000000961
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "objective": -815.0646332179882,
+      "negative_elbo": -876.6700936889648,
+      "reconstruction_nll": -938.2755543006614,
+      "kl": 61.605460600747,
+      "grayscale_mse": 0.003737331069897563
+    },
+    "validation": {
+      "objective": -791.3309336090088,
+      "negative_elbo": -852.7508217684427,
+      "reconstruction_nll": -914.1707103042603,
+      "kl": 61.41988840802511,
+      "grayscale_mse": 0.004352250535409742
+    },
+    "seconds": 14.545834800010198
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "objective": -816.5564186344853,
+      "negative_elbo": -877.9545532071149,
+      "reconstruction_nll": -939.3526878051758,
+      "kl": 61.398134512018274,
+      "grayscale_mse": 0.0037098531678288796
+    },
+    "validation": {
+      "objective": -799.7027104466756,
+      "negative_elbo": -861.3006352259318,
+      "reconstruction_nll": -922.898559117635,
+      "kl": 61.59792417240143,
+      "grayscale_mse": 0.0041296013405614455
+    },
+    "seconds": 14.378581299999496
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "objective": -818.4098976669311,
+      "negative_elbo": -879.7095360271312,
+      "reconstruction_nll": -941.0091745489615,
+      "kl": 61.29963846789466,
+      "grayscale_mse": 0.0036675958558825424
+    },
+    "validation": {
+      "objective": -799.3425252278646,
+      "negative_elbo": -861.5104520238241,
+      "reconstruction_nll": -923.6783786595662,
+      "kl": 62.16792645359039,
+      "grayscale_mse": 0.00410970798706209
+    },
+    "seconds": 14.366474800001015
+  },
+  {
+    "epoch": 21,
+    "train": {
+      "objective": -820.2365339951692,
+      "negative_elbo": -881.397191598327,
+      "reconstruction_nll": -942.5578488645907,
+      "kl": 61.16065737063796,
+      "grayscale_mse": 0.00362808886703688
+    },
+    "validation": {
+      "objective": -797.8227666346232,
+      "negative_elbo": -859.7965588645935,
+      "reconstruction_nll": -921.770351117452,
+      "kl": 61.973792245546974,
+      "grayscale_mse": 0.004158382174714158
+    },
+    "seconds": 14.369212200006586
+  },
+  {
+    "epoch": 22,
+    "train": {
+      "objective": -821.6615678306862,
+      "negative_elbo": -882.7686495499787,
+      "reconstruction_nll": -943.8757310053508,
+      "kl": 61.10708153625771,
+      "grayscale_mse": 0.00359446941653301
+    },
+    "validation": {
+      "objective": -798.5071251754761,
+      "negative_elbo": -859.563179851532,
+      "reconstruction_nll": -920.6192337773641,
+      "kl": 61.056054380734764,
+      "grayscale_mse": 0.004187747395636203
+    },
+    "seconds": 14.44634799999767
+  },
+  {
+    "epoch": 23,
+    "train": {
+      "objective": -822.9097401123047,
+      "negative_elbo": -883.8710162525883,
+      "reconstruction_nll": -944.83229258615,
+      "kl": 60.96127628029717,
+      "grayscale_mse": 0.003570067340082864
+    },
+    "validation": {
+      "objective": -799.2344265213013,
+      "negative_elbo": -859.5582580490112,
+      "reconstruction_nll": -919.8820888926189,
+      "kl": 60.323831234931944,
+      "grayscale_mse": 0.004206552140996791
+    },
+    "seconds": 14.64506560000882
+  },
+  {
+    "epoch": 24,
+    "train": {
+      "objective": -824.6303720640959,
+      "negative_elbo": -885.5016874867192,
+      "reconstruction_nll": -946.3730030268916,
+      "kl": 60.87131546430235,
+      "grayscale_mse": 0.0035307634990771205
+    },
+    "validation": {
+      "objective": -797.4402242355346,
+      "negative_elbo": -857.6336006558736,
+      "reconstruction_nll": -917.8269765027364,
+      "kl": 60.19337611420949,
+      "grayscale_mse": 0.004258978451990212
+    },
+    "seconds": 14.435049800013076
+  },
+  {
+    "epoch": 25,
+    "train": {
+      "objective": -825.6956512456824,
+      "negative_elbo": -886.4525538869788,
+      "reconstruction_nll": -947.2094567984121,
+      "kl": 60.75690280335038,
+      "grayscale_mse": 0.0035094253996859255
+    },
+    "validation": {
+      "objective": -801.9823318099975,
+      "negative_elbo": -862.3016008936564,
+      "reconstruction_nll": -922.6208706410725,
+      "kl": 60.31926957098643,
+      "grayscale_mse": 0.004136685229081195
+    },
+    "seconds": 14.597000199995819
+  },
+  {
+    "epoch": 26,
+    "train": {
+      "objective": -826.8462754445959,
+      "negative_elbo": -887.5079630183467,
+      "reconstruction_nll": -948.1696503759314,
+      "kl": 60.66168750777068,
+      "grayscale_mse": 0.0034849306645197363
+    },
+    "validation": {
+      "objective": -800.870356262207,
+      "negative_elbo": -862.2013496627808,
+      "reconstruction_nll": -923.5323428319296,
+      "kl": 61.3309931863149,
+      "grayscale_mse": 0.004113433399994392
+    },
+    "seconds": 14.483706099999836
+  },
+  {
+    "epoch": 27,
+    "train": {
+      "objective": -828.1177234251235,
+      "negative_elbo": -888.7180262121977,
+      "reconstruction_nll": -949.3183290326153,
+      "kl": 60.60030279823586,
+      "grayscale_mse": 0.003455627643979689
+    },
+    "validation": {
+      "objective": -801.5526030171712,
+      "negative_elbo": -862.6719150517781,
+      "reconstruction_nll": -923.7912267354329,
+      "kl": 61.11931175549825,
+      "grayscale_mse": 0.004106829230605702
+    },
+    "seconds": 14.398683199993684
+  },
+  {
+    "epoch": 28,
+    "train": {
+      "objective": -829.2017692212705,
+      "negative_elbo": -889.7066680167869,
+      "reconstruction_nll": -950.2115670256438,
+      "kl": 60.504898930620264,
+      "grayscale_mse": 0.003432840963268838
+    },
+    "validation": {
+      "objective": -802.2168231786092,
+      "negative_elbo": -863.5149906336467,
+      "reconstruction_nll": -924.8131576766967,
+      "kl": 61.29816737016042,
+      "grayscale_mse": 0.004080759552370485
+    },
+    "seconds": 14.120580799994059
+  },
+  {
+    "epoch": 29,
+    "train": {
+      "objective": -830.3637393228037,
+      "negative_elbo": -890.8449697327791,
+      "reconstruction_nll": -951.326199975473,
+      "kl": 60.4812302738119,
+      "grayscale_mse": 0.0034044064493694653
+    },
+    "validation": {
+      "objective": -799.0070810038249,
+      "negative_elbo": -859.9053289489746,
+      "reconstruction_nll": -920.803576886495,
+      "kl": 60.89824798933665,
+      "grayscale_mse": 0.004183044779560684
+    },
+    "seconds": 14.305831899997429
+  },
+  {
+    "epoch": 30,
+    "train": {
+      "objective": -831.2741515344691,
+      "negative_elbo": -891.6679673569291,
+      "reconstruction_nll": -952.0617833568432,
+      "kl": 60.39381595710472,
+      "grayscale_mse": 0.0033856415615807272
+    },
+    "validation": {
+      "objective": -801.9842563451131,
+      "negative_elbo": -862.4642398656209,
+      "reconstruction_nll": -922.9442237091065,
+      "kl": 60.47998363876343,
+      "grayscale_mse": 0.0041284364318756464
+    },
+    "seconds": 14.28770309999527
+  }
+]

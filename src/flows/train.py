@@ -1,7 +1,6 @@
 """Run an explicitly requested MNIST/Fashion-MNIST baseline: python -m flows.train."""
 
 import argparse
-import json
 from pathlib import Path
 import time
 from uuid import uuid4
@@ -9,9 +8,9 @@ from uuid import uuid4
 import matplotlib
 import matplotlib.pyplot as plt
 import torch
-from torch.utils.data import DataLoader, Subset
 
-from shared import get_device, make_dataloaders, plot_image_grid, plot_metrics, seed_everything
+from shared import make_dataloaders, plot_image_grid, plot_metrics, seed_everything
+from shared.experiment import limit_loader, resolve_device, write_json
 
 from .likelihood import RealNVPDensity
 from .realnvp import RealNVP
@@ -48,29 +47,6 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--evaluate-test", action="store_true",
                         help="Evaluate the best validation checkpoint once on the official test set")
     return parser
-
-
-def resolve_device(name: str) -> torch.device:
-    if name == "cuda" and not torch.cuda.is_available():
-        raise RuntimeError("CUDA was requested but is unavailable in this PyTorch environment")
-    return get_device() if name == "auto" else torch.device(name)
-
-
-def limit_loader(loader: DataLoader, count: int | None, *, shuffle: bool) -> DataLoader:
-    """Keep a prefix of an already seeded training/validation split, if requested."""
-    if count is None:
-        return loader
-    if not 1 <= count <= len(loader.dataset):
-        raise ValueError("subset size must be positive and no larger than its split")
-    return DataLoader(
-        Subset(loader.dataset, range(count)), batch_size=loader.batch_size,
-        shuffle=shuffle, num_workers=loader.num_workers, pin_memory=loader.pin_memory,
-        worker_init_fn=loader.worker_init_fn, generator=loader.generator, drop_last=False,
-    )
-
-
-def write_json(path: Path, value: object) -> None:
-    path.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
 
 
 def save_best_checkpoint(

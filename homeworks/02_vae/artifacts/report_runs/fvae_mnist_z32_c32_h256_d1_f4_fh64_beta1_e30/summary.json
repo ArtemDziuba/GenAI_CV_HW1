@@ -1,0 +1,11 @@
+{
+  "best_epoch": 30,
+  "selection_metric": "negative_elbo",
+  "validation": {
+    "objective": 90.59430147107442,
+    "negative_elbo": 90.59430147107442,
+    "reconstruction_nll": 64.93631136639912,
+    "kl": 25.657990132331847,
+    "grayscale_mse": 0.010809821760786386
+  }
+}

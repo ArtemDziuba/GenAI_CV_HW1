@@ -1,0 +1,69 @@
+{
+  "kind": "fvae",
+  "model": {
+    "latent_dim": 32,
+    "hidden_channels": 32,
+    "hidden_dim": 256,
+    "conv_depth": 1,
+    "flow_steps": 4,
+    "flow_hidden_dim": 32,
+    "flow_hidden_layers": 2,
+    "scale_limit": 1.0
+  },
+  "arguments": {
+    "model": "fvae",
+    "ae_loss": "mse",
+    "dataset": "mnist",
+    "data_root": "data",
+    "output": "checkpoints\\vae\\fvae_mnist_z32_c32_h256_d1_f4_fh32_beta1_e30",
+    "download": false,
+    "device": "cuda",
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "latent_dim": 32,
+    "hidden_channels": 32,
+    "hidden_dim": 256,
+    "conv_depth": 1,
+    "flow_steps": 4,
+    "flow_hidden_dim": 32,
+    "flow_hidden_layers": 2,
+    "scale_limit": 1.0,
+    "likelihood": "bernoulli",
+    "observation_std": 0.1,
+    "beta": 1.0,
+    "grad_clip": 0.0,
+    "validation_fraction": 0.1,
+    "num_workers": 0,
+    "seed": 42,
+    "deterministic": false,
+    "train_limit": null,
+    "validation_limit": null,
+    "sample_count": 64,
+    "reconstruction_count": 24,
+    "reconstruction_columns": 8,
+    "sample_every": 5,
+    "evaluate_test": false
+  },
+  "objective": {
+    "likelihood": "bernoulli",
+    "observation_std": 0.1,
+    "beta": 1.0
+  },
+  "selection_metric": "negative_elbo",
+  "observation_protocol": "dynamic binarization; binary encoder inputs and targets",
+  "units": "nats/image; pixel and latent sums, then batch mean",
+  "runtime": {
+    "torch_version": "2.15.0+cu134",
+    "device": "cuda",
+    "cuda_version": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "parameter_count": 1717505,
+  "split_sizes": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000
+  }
+}

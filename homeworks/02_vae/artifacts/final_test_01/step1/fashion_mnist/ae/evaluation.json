@@ -1,0 +1,18 @@
+{
+  "checkpoint": "checkpoints\\vae\\ae_fashion_mnist_z64_c32_h256_d1_e30\\best.pt",
+  "checkpoint_epoch": 28,
+  "split": "test",
+  "count": 10000,
+  "metrics": {
+    "objective": 3.7953134767472743,
+    "grayscale_mae": 0.032725064228381964,
+    "grayscale_mse": 0.0048409609680587894
+  },
+  "seed": 42,
+  "sample_temperature": 1.0,
+  "reconstruction_count": 24,
+  "reconstruction_columns": 8,
+  "observation_protocol": "original grayscale [0,1]",
+  "units": "SSE/image; grayscale_mse is SSE/784; grayscale_mae is SAE/784",
+  "likelihood_note": "negative ELBO/IWAE bounds are estimates, not exact marginal NLL"
+}

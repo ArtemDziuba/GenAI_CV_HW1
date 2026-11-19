@@ -1,0 +1,60 @@
+{
+  "kind": "ae",
+  "model": {
+    "latent_dim": 16,
+    "hidden_channels": 32,
+    "hidden_dim": 256,
+    "conv_depth": 1
+  },
+  "arguments": {
+    "model": "ae",
+    "dataset": "mnist",
+    "data_root": "data",
+    "output": "checkpoints\\vae\\ae_mnist_z16_c32_d1_base_e30",
+    "download": false,
+    "device": "cuda",
+    "epochs": 30,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "latent_dim": 16,
+    "hidden_channels": 32,
+    "hidden_dim": 256,
+    "conv_depth": 1,
+    "flow_steps": 4,
+    "flow_hidden_dim": 128,
+    "flow_hidden_layers": 2,
+    "scale_limit": 1.0,
+    "likelihood": "bernoulli",
+    "observation_std": 0.1,
+    "beta": 1.0,
+    "grad_clip": 0.0,
+    "validation_fraction": 0.1,
+    "num_workers": 0,
+    "seed": 42,
+    "deterministic": false,
+    "train_limit": null,
+    "validation_limit": null,
+    "sample_count": 64,
+    "sample_every": 5,
+    "evaluate_test": false
+  },
+  "objective": {
+    "loss": "sum squared error / image"
+  },
+  "selection_metric": "grayscale_mse",
+  "observation_protocol": "original grayscale [0,1]",
+  "units": "SSE/image; grayscale_mse is SSE/784",
+  "runtime": {
+    "torch_version": "2.15.0+cu134",
+    "device": "cuda",
+    "cuda_version": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "parameter_count": 1684177,
+  "split_sizes": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000
+  }
+}

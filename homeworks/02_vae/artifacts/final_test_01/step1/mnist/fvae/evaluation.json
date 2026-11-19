@@ -1,0 +1,22 @@
+{
+  "checkpoint": "checkpoints\\vae\\fvae_mnist_z32_c32_h256_d1_f4_fh64_beta1_e30\\best.pt",
+  "checkpoint_epoch": 30,
+  "split": "test",
+  "count": 10000,
+  "metrics": {
+    "objective": 90.04393486709594,
+    "negative_elbo": 90.04393486709594,
+    "reconstruction_nll": 64.59216341047286,
+    "kl": 25.451771443939208,
+    "grayscale_mse": 0.010791301634605042,
+    "negative_iwae_bound": 85.82958118488247,
+    "importance_samples": 32
+  },
+  "seed": 42,
+  "sample_temperature": 1.0,
+  "reconstruction_count": 24,
+  "reconstruction_columns": 8,
+  "observation_protocol": "dynamic binarization; binary encoder inputs and targets",
+  "units": "nats/image; pixel and latent sums, then batch mean",
+  "likelihood_note": "negative ELBO/IWAE bounds are estimates, not exact marginal NLL"
+}

@@ -1,0 +1,442 @@
+{
+  "status": "complete",
+  "evaluation": {
+    "split": "test",
+    "count_per_dataset": 10000,
+    "device": "cuda",
+    "batch_size": 64,
+    "seed": 42,
+    "importance_samples_for_variational_models": 32,
+    "download": false,
+    "training": false
+  },
+  "selections": [
+    {
+      "step": 1,
+      "dataset": "mnist",
+      "kind": "ae",
+      "run": "checkpoints/vae/ae_mnist_z64_c32_h256_d1_e30",
+      "selection": "lowest saved full-split validation grayscale MSE",
+      "validation": {
+        "objective": 1.3839926191767056,
+        "grayscale_mae": 0.013034696278278716,
+        "grayscale_mse": 0.0017652966716923402
+      },
+      "checkpoint_epoch": 29,
+      "checkpoint_sha256": "25ba8f2ff3bd6f6e7ef638028ebd683eba46c9d5d31c4ee2f90624457a18bd96",
+      "output": "step1/mnist/ae",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\artem\\Downloads\\GenAI\\CVHW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "vae.evaluate",
+        "--checkpoint",
+        "checkpoints/vae/ae_mnist_z64_c32_h256_d1_e30/best.pt",
+        "--output",
+        "homeworks\\02_vae\\artifacts\\final_test_01\\step1\\mnist\\ae",
+        "--device",
+        "cuda",
+        "--split",
+        "test",
+        "--batch-size",
+        "64",
+        "--seed",
+        "42",
+        "--importance-samples",
+        "32",
+        "--reconstruction-count",
+        "24",
+        "--reconstruction-columns",
+        "8"
+      ],
+      "seconds": 6.689789900003234,
+      "test": {
+        "objective": 1.3588403903760016,
+        "grayscale_mae": 0.012876734535349533,
+        "grayscale_mse": 0.0017332147487119072
+      },
+      "evaluation_file": "homeworks/02_vae/artifacts/final_test_01/step1/mnist/ae/evaluation.json",
+      "model": {
+        "latent_dim": 64,
+        "hidden_channels": 32,
+        "hidden_dim": 256,
+        "conv_depth": 1
+      },
+      "objective": {
+        "ae_loss": "mse",
+        "loss": "sum squared error / image"
+      },
+      "parameters": 1708801,
+      "config_sha256": "61e5502e71f305cd800f8fde010df632585dc798174b63d4d93925ebf47c0363"
+    },
+    {
+      "step": 1,
+      "dataset": "fashion_mnist",
+      "kind": "ae",
+      "run": "checkpoints/vae/ae_fashion_mnist_z64_c32_h256_d1_e30",
+      "selection": "lowest saved full-split validation grayscale MSE",
+      "validation": {
+        "objective": 3.8265127779046693,
+        "grayscale_mae": 0.03274209626220788,
+        "grayscale_mse": 0.004880755995371146
+      },
+      "checkpoint_epoch": 28,
+      "checkpoint_sha256": "220e9fc8dcd085fc68ffac3ad5db51c695b1e412aadcff3de4313b757a66cf0c",
+      "output": "step1/fashion_mnist/ae",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\artem\\Downloads\\GenAI\\CVHW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "vae.evaluate",
+        "--checkpoint",
+        "checkpoints/vae/ae_fashion_mnist_z64_c32_h256_d1_e30/best.pt",
+        "--output",
+        "homeworks\\02_vae\\artifacts\\final_test_01\\step1\\fashion_mnist\\ae",
+        "--device",
+        "cuda",
+        "--split",
+        "test",
+        "--batch-size",
+        "64",
+        "--seed",
+        "42",
+        "--importance-samples",
+        "32",
+        "--reconstruction-count",
+        "24",
+        "--reconstruction-columns",
+        "8"
+      ],
+      "seconds": 6.354485299991211,
+      "test": {
+        "objective": 3.7953134767472743,
+        "grayscale_mae": 0.032725064228381964,
+        "grayscale_mse": 0.0048409609680587894
+      },
+      "evaluation_file": "homeworks/02_vae/artifacts/final_test_01/step1/fashion_mnist/ae/evaluation.json",
+      "model": {
+        "latent_dim": 64,
+        "hidden_channels": 32,
+        "hidden_dim": 256,
+        "conv_depth": 1
+      },
+      "objective": {
+        "ae_loss": "mse",
+        "loss": "sum squared error / image"
+      },
+      "parameters": 1708801,
+      "config_sha256": "bcf9fec9bd3dd2bb6edb388a79a252962dc37eb79df993bcaa623ad7b8d2f57f"
+    },
+    {
+      "step": 1,
+      "dataset": "mnist",
+      "kind": "vae",
+      "run": "checkpoints/vae/vae_mnist_z32_c64_h256_d1_beta1_e30",
+      "selection": "lowest full-split Bernoulli validation ordinary negative ELBO",
+      "validation": {
+        "objective": 91.22630461374919,
+        "negative_elbo": 91.22630461374919,
+        "reconstruction_nll": 64.63319095134734,
+        "kl": 26.593113642851513,
+        "grayscale_mse": 0.010892623831731422
+      },
+      "checkpoint_epoch": 30,
+      "checkpoint_sha256": "b3237a51bbaca5b4752653df7d342c9379345586f7288cc8776861a671f7b2d1",
+      "output": "step1/mnist/vae",
+      "status": "complete",
+      "model": {
+        "latent_dim": 32,
+        "hidden_channels": 64,
+        "hidden_dim": 256,
+        "conv_depth": 1,
+        "flow_steps": 0,
+        "flow_hidden_dim": 128,
+        "flow_hidden_layers": 2,
+        "scale_limit": 1.0
+      },
+      "objective": {
+        "likelihood": "bernoulli",
+        "observation_std": 0.1,
+        "beta": 1.0
+      },
+      "parameters": 3507137,
+      "config_sha256": "56a1fbe44d39d17f5d34398578a871e4677ff32291ec6851d9f5ec92a0f0b73a",
+      "command": [
+        "C:\\Users\\artem\\Downloads\\GenAI\\CVHW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "vae.evaluate",
+        "--checkpoint",
+        "checkpoints/vae/vae_mnist_z32_c64_h256_d1_beta1_e30/best.pt",
+        "--output",
+        "homeworks\\02_vae\\artifacts\\final_test_01\\step1\\mnist\\vae",
+        "--device",
+        "cuda",
+        "--split",
+        "test",
+        "--batch-size",
+        "64",
+        "--seed",
+        "42",
+        "--importance-samples",
+        "32",
+        "--reconstruction-count",
+        "24",
+        "--reconstruction-columns",
+        "8"
+      ],
+      "seconds": 16.63130100001581,
+      "test": {
+        "objective": 90.61151475162507,
+        "negative_elbo": 90.61151475162507,
+        "reconstruction_nll": 64.19865652513504,
+        "kl": 26.412858228778838,
+        "grayscale_mse": 0.010817530433641514,
+        "negative_iwae_bound": 86.16724618827021,
+        "importance_samples": 32
+      },
+      "evaluation_file": "homeworks/02_vae/artifacts/final_test_01/step1/mnist/vae/evaluation.json"
+    },
+    {
+      "step": 1,
+      "dataset": "mnist",
+      "kind": "fvae",
+      "run": "checkpoints/vae/fvae_mnist_z32_c32_h256_d1_f4_fh64_beta1_e30",
+      "selection": "lowest full-split Bernoulli validation ordinary negative ELBO",
+      "validation": {
+        "objective": 90.59430147107442,
+        "negative_elbo": 90.59430147107442,
+        "reconstruction_nll": 64.93631136639912,
+        "kl": 25.657990132331847,
+        "grayscale_mse": 0.010809821760786386
+      },
+      "checkpoint_epoch": 30,
+      "checkpoint_sha256": "139771f06a63a721fe37816f6bf0ed76275afc22e16656b280dbefc75f198439",
+      "output": "step1/mnist/fvae",
+      "status": "complete",
+      "model": {
+        "latent_dim": 32,
+        "hidden_channels": 32,
+        "hidden_dim": 256,
+        "conv_depth": 1,
+        "flow_steps": 4,
+        "flow_hidden_dim": 64,
+        "flow_hidden_layers": 2,
+        "scale_limit": 1.0
+      },
+      "objective": {
+        "likelihood": "bernoulli",
+        "observation_std": 0.1,
+        "beta": 1.0
+      },
+      "parameters": 1742337,
+      "config_sha256": "21d8a66ec99640961ed68c7361e94dde7c4f3f86e4a382ebb58651e06ccef0de",
+      "command": [
+        "C:\\Users\\artem\\Downloads\\GenAI\\CVHW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "vae.evaluate",
+        "--checkpoint",
+        "checkpoints/vae/fvae_mnist_z32_c32_h256_d1_f4_fh64_beta1_e30/best.pt",
+        "--output",
+        "homeworks\\02_vae\\artifacts\\final_test_01\\step1\\mnist\\fvae",
+        "--device",
+        "cuda",
+        "--split",
+        "test",
+        "--batch-size",
+        "64",
+        "--seed",
+        "42",
+        "--importance-samples",
+        "32",
+        "--reconstruction-count",
+        "24",
+        "--reconstruction-columns",
+        "8"
+      ],
+      "seconds": 28.53344410000136,
+      "test": {
+        "objective": 90.04393486709594,
+        "negative_elbo": 90.04393486709594,
+        "reconstruction_nll": 64.59216341047286,
+        "kl": 25.451771443939208,
+        "grayscale_mse": 0.010791301634605042,
+        "negative_iwae_bound": 85.82958118488247,
+        "importance_samples": 32
+      },
+      "evaluation_file": "homeworks/02_vae/artifacts/final_test_01/step1/mnist/fvae/evaluation.json"
+    },
+    {
+      "step": 1,
+      "dataset": "fashion_mnist",
+      "kind": "vae",
+      "run": "checkpoints/vae/vae_fashion_mnist_z32_c64_h256_d1_beta1_e30",
+      "selection": "lowest full-split Bernoulli validation ordinary negative ELBO",
+      "validation": {
+        "objective": 232.78666702651978,
+        "negative_elbo": 232.78666702651978,
+        "reconstruction_nll": 214.56020248095194,
+        "kl": 18.226464673042297,
+        "grayscale_mse": 0.01419820840061099
+      },
+      "checkpoint_epoch": 30,
+      "checkpoint_sha256": "8c594d613182996b0cfbc416e39a33e2dac28dfea9a6d8cb97dd97d660114d2f",
+      "output": "step1/fashion_mnist/vae",
+      "status": "complete",
+      "model": {
+        "latent_dim": 32,
+        "hidden_channels": 64,
+        "hidden_dim": 256,
+        "conv_depth": 1,
+        "flow_steps": 0,
+        "flow_hidden_dim": 128,
+        "flow_hidden_layers": 2,
+        "scale_limit": 1.0
+      },
+      "objective": {
+        "likelihood": "bernoulli",
+        "observation_std": 0.1,
+        "beta": 1.0
+      },
+      "parameters": 3507137,
+      "config_sha256": "e33fccc894e9501e6a3c6a52b6450d69a90c6d3b40bfa535e09ecab4599bac4d",
+      "command": [
+        "C:\\Users\\artem\\Downloads\\GenAI\\CVHW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "vae.evaluate",
+        "--checkpoint",
+        "checkpoints/vae/vae_fashion_mnist_z32_c64_h256_d1_beta1_e30/best.pt",
+        "--output",
+        "homeworks\\02_vae\\artifacts\\final_test_01\\step1\\fashion_mnist\\vae",
+        "--device",
+        "cuda",
+        "--split",
+        "test",
+        "--batch-size",
+        "64",
+        "--seed",
+        "42",
+        "--importance-samples",
+        "32",
+        "--reconstruction-count",
+        "24",
+        "--reconstruction-columns",
+        "8"
+      ],
+      "seconds": 17.00099390000105,
+      "test": {
+        "objective": 233.49916386795044,
+        "negative_elbo": 233.49916386795044,
+        "reconstruction_nll": 215.32638069229125,
+        "kl": 18.172783133125304,
+        "grayscale_mse": 0.014147513398947193,
+        "negative_iwae_bound": 230.39822081220635,
+        "importance_samples": 32
+      },
+      "evaluation_file": "homeworks/02_vae/artifacts/final_test_01/step1/fashion_mnist/vae/evaluation.json"
+    },
+    {
+      "step": 1,
+      "dataset": "fashion_mnist",
+      "kind": "fvae",
+      "run": "checkpoints/vae/fvae_fashion_mnist_z32_c32_h256_d1_f4_fh64_beta1_e30",
+      "selection": "lowest full-split Bernoulli validation ordinary negative ELBO",
+      "validation": {
+        "objective": 232.7820577290853,
+        "negative_elbo": 232.7820577290853,
+        "reconstruction_nll": 215.97829920832316,
+        "kl": 16.80375849533081,
+        "grayscale_mse": 0.014497736880904995
+      },
+      "checkpoint_epoch": 30,
+      "checkpoint_sha256": "d107675090b2c926b53049bc37e0a14a70dbf33a2809514b577076e1c6044ded",
+      "output": "step1/fashion_mnist/fvae",
+      "status": "complete",
+      "model": {
+        "latent_dim": 32,
+        "hidden_channels": 32,
+        "hidden_dim": 256,
+        "conv_depth": 1,
+        "flow_steps": 4,
+        "flow_hidden_dim": 64,
+        "flow_hidden_layers": 2,
+        "scale_limit": 1.0
+      },
+      "objective": {
+        "likelihood": "bernoulli",
+        "observation_std": 0.1,
+        "beta": 1.0
+      },
+      "parameters": 1742337,
+      "config_sha256": "6b92c76e4510365dbd58124fb7c8aef9b249c35c41b628830f636524474706da",
+      "command": [
+        "C:\\Users\\artem\\Downloads\\GenAI\\CVHW1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "vae.evaluate",
+        "--checkpoint",
+        "checkpoints/vae/fvae_fashion_mnist_z32_c32_h256_d1_f4_fh64_beta1_e30/best.pt",
+        "--output",
+        "homeworks\\02_vae\\artifacts\\final_test_01\\step1\\fashion_mnist\\fvae",
+        "--device",
+        "cuda",
+        "--split",
+        "test",
+        "--batch-size",
+        "64",
+        "--seed",
+        "42",
+        "--importance-samples",
+        "32",
+        "--reconstruction-count",
+        "24",
+        "--reconstruction-columns",
+        "8"
+      ],
+      "seconds": 29.83661040000152,
+      "test": {
+        "objective": 233.56512853698732,
+        "negative_elbo": 233.56512853698732,
+        "reconstruction_nll": 216.78895682907105,
+        "kl": 16.776171625328065,
+        "grayscale_mse": 0.014462658926821314,
+        "negative_iwae_bound": 230.71777794052005,
+        "importance_samples": 32
+      },
+      "evaluation_file": "homeworks/02_vae/artifacts/final_test_01/step1/fashion_mnist/fvae/evaluation.json"
+    }
+  ],
+  "selection_frozen": true,
+  "selection_criteria": {
+    "step1": {
+      "ae": "lowest full-split validation grayscale MSE",
+      "vae": "lowest full-split Bernoulli validation ordinary negative ELBO",
+      "fvae": "lowest full-split Bernoulli validation ordinary negative ELBO"
+    },
+    "step2": "match each model family between Digits and Fashion-MNIST using identical recorded architecture and objective; the step1 winners already satisfy this",
+    "test_metrics_used_for_selection": false
+  },
+  "runtime": {
+    "torch": "2.15.0+cu134",
+    "cuda": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "step2_pairs": [
+    {
+      "kind": "ae",
+      "mnist": "step1/mnist/ae",
+      "fashion_mnist": "step1/fashion_mnist/ae",
+      "reuse_step1_evaluations": true
+    },
+    {
+      "kind": "vae",
+      "mnist": "step1/mnist/vae",
+      "fashion_mnist": "step1/fashion_mnist/vae",
+      "reuse_step1_evaluations": true
+    },
+    {
+      "kind": "fvae",
+      "mnist": "step1/mnist/fvae",
+      "fashion_mnist": "step1/fashion_mnist/fvae",
+      "reuse_step1_evaluations": true
+    }
+  ]
+}

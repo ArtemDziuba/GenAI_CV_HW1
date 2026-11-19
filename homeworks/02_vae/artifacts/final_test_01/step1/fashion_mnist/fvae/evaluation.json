@@ -1,0 +1,22 @@
+{
+  "checkpoint": "checkpoints\\vae\\fvae_fashion_mnist_z32_c32_h256_d1_f4_fh64_beta1_e30\\best.pt",
+  "checkpoint_epoch": 30,
+  "split": "test",
+  "count": 10000,
+  "metrics": {
+    "objective": 233.56512853698732,
+    "negative_elbo": 233.56512853698732,
+    "reconstruction_nll": 216.78895682907105,
+    "kl": 16.776171625328065,
+    "grayscale_mse": 0.014462658926821314,
+    "negative_iwae_bound": 230.71777794052005,
+    "importance_samples": 32
+  },
+  "seed": 42,
+  "sample_temperature": 1.0,
+  "reconstruction_count": 24,
+  "reconstruction_columns": 8,
+  "observation_protocol": "dynamic binarization; binary encoder inputs and targets",
+  "units": "nats/image; pixel and latent sums, then batch mean",
+  "likelihood_note": "negative ELBO/IWAE bounds are estimates, not exact marginal NLL"
+}

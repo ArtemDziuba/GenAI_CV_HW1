@@ -1,0 +1,74 @@
+[
+  {
+    "run": "checkpoints/vae/fvae_mnist_z32_c32_h256_d1_f4_fh128_beta4_e30",
+    "checkpoint_epoch": 23,
+    "checkpoint_sha256": "c38f50abb2f54e3ed5ee80db976298b1912f6b9d60ab315f4b611d08b3e96d37",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "count_per_seed": 64,
+    "temperature": 1.0,
+    "display": "decoder means; no observation noise",
+    "files": [
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f4_fh128_beta4_e30/seed_42.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f4_fh128_beta4_e30/seed_123.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f4_fh128_beta4_e30/seed_2026.png"
+    ]
+  },
+  {
+    "run": "checkpoints/vae/fvae_mnist_z32_c32_h256_d1_f4_fh32_beta4_e30",
+    "checkpoint_epoch": 30,
+    "checkpoint_sha256": "a59d4bf252656443823dcf0d57d0a4a6f8616d8dd5ddf362198377893e05c111",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "count_per_seed": 64,
+    "temperature": 1.0,
+    "display": "decoder means; no observation noise",
+    "files": [
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f4_fh32_beta4_e30/seed_42.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f4_fh32_beta4_e30/seed_123.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f4_fh32_beta4_e30/seed_2026.png"
+    ]
+  },
+  {
+    "run": "checkpoints/vae/fvae_mnist_z32_c32_h256_d1_f8_fh64_beta4_e30",
+    "checkpoint_epoch": 30,
+    "checkpoint_sha256": "a9c5a659c9a95a88908727f56b70d0618dfcfcf8e4b6ba8f1ae493084a4fb2c7",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "count_per_seed": 64,
+    "temperature": 1.0,
+    "display": "decoder means; no observation noise",
+    "files": [
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f8_fh64_beta4_e30/seed_42.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f8_fh64_beta4_e30/seed_123.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f8_fh64_beta4_e30/seed_2026.png"
+    ]
+  },
+  {
+    "run": "checkpoints/vae/fvae_mnist_z32_c32_h256_d1_f2_fh64_beta4_e30",
+    "checkpoint_epoch": 30,
+    "checkpoint_sha256": "42d9fe4a49a4d0a2306313bd5faa015374eed2718ceb3be6dd6acf84eb657eb1",
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "count_per_seed": 64,
+    "temperature": 1.0,
+    "display": "decoder means; no observation noise",
+    "files": [
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f2_fh64_beta4_e30/seed_42.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f2_fh64_beta4_e30/seed_123.png",
+      "homeworks/02_vae/artifacts/fvae_mnist_controlled_01/variant_comparison/fvae_mnist_z32_c32_h256_d1_f2_fh64_beta4_e30/seed_2026.png"
+    ]
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "group": "G01",
+    "controls": {
+      "dataset": "mnist",
+      "hidden_channels": 16,
+      "hidden_dim": 64,
+      "conv_depth": 1,
+      "ae_loss": "l1",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      16
+    ],
+    "status": "single measured latent size; more runs needed for a curve",
+    "figure": "by_configuration/g01_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_mnist_z16_c16_h64_d1_l1_e30"
+    ]
+  },
+  {
+    "group": "G02",
+    "controls": {
+      "dataset": "fashion_mnist",
+      "hidden_channels": 16,
+      "hidden_dim": 64,
+      "conv_depth": 1,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      32
+    ],
+    "status": "single measured latent size; more runs needed for a curve",
+    "figure": "by_configuration/g02_fashion_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_fashion_mnist_z32_c16_h64_d1_e30"
+    ]
+  },
+  {
+    "group": "G03",
+    "controls": {
+      "dataset": "fashion_mnist",
+      "hidden_channels": 32,
+      "hidden_dim": 256,
+      "conv_depth": 1,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      32,
+      64
+    ],
+    "status": "measured latent-size comparison",
+    "figure": "by_configuration/g03_fashion_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_fashion_mnist_z32_c32_h256_d1_e30",
+      "checkpoints/vae/ae_fashion_mnist_z64_c32_h256_d1_e30"
+    ]
+  },
+  {
+    "group": "G04",
+    "controls": {
+      "dataset": "mnist",
+      "hidden_channels": 16,
+      "hidden_dim": 128,
+      "conv_depth": 1,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      16
+    ],
+    "status": "single measured latent size; more runs needed for a curve",
+    "figure": "by_configuration/g04_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_mnist_z16_c16_h128_d1_e30"
+    ]
+  },
+  {
+    "group": "G05",
+    "controls": {
+      "dataset": "mnist",
+      "hidden_channels": 16,
+      "hidden_dim": 64,
+      "conv_depth": 1,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      16,
+      32
+    ],
+    "status": "measured latent-size comparison",
+    "figure": "by_configuration/g05_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_mnist_z16_c16_h64_d1_e30",
+      "checkpoints/vae/ae_mnist_z32_c16_h64_d1_e30"
+    ]
+  },
+  {
+    "group": "G06",
+    "controls": {
+      "dataset": "mnist",
+      "hidden_channels": 32,
+      "hidden_dim": 256,
+      "conv_depth": 1,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      16,
+      64
+    ],
+    "status": "measured latent-size comparison",
+    "figure": "by_configuration/g06_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_mnist_z16_c32_d1_base_e30",
+      "checkpoints/vae/ae_mnist_z64_c32_h256_d1_e30"
+    ]
+  },
+  {
+    "group": "G07",
+    "controls": {
+      "dataset": "fashion_mnist",
+      "hidden_channels": 32,
+      "hidden_dim": 256,
+      "conv_depth": 2,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      64
+    ],
+    "status": "single measured latent size; more runs needed for a curve",
+    "figure": "by_configuration/g07_fashion_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_fashion_mnist_z64_c32_h256_d2_e30"
+    ]
+  },
+  {
+    "group": "G08",
+    "controls": {
+      "dataset": "mnist",
+      "hidden_channels": 16,
+      "hidden_dim": 64,
+      "conv_depth": 2,
+      "ae_loss": "mse",
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 30,
+      "weight_decay": 0.0,
+      "grad_clip": 0.0,
+      "validation_fraction": 0.1,
+      "train_size": 54000,
+      "validation_size": 6000,
+      "seed": 42,
+      "deterministic": false
+    },
+    "latent_sizes": [
+      16
+    ],
+    "status": "single measured latent size; more runs needed for a curve",
+    "figure": "by_configuration/g08_mnist.png",
+    "runs": [
+      "checkpoints/vae/ae_mnist_z16_c16_h64_d2_e30"
+    ]
+  }
+]
