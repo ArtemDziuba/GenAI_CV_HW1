@@ -1,0 +1,21 @@
+{
+  "README.md": "cf6d7d85005a39a59a18d92771b273b3446019c166ea41584697268cbe17a988",
+  "homeworks\\03_gan\\report.md": "ac9259ef6031933823d3e1d2d54e9072cd4a2d499edc134a165da3e8e0a74fde",
+  "homeworks\\01_normalizing_flows\\report.md": "bfc4e53ea91809d3181e6e5bb9505f4120c665da655096190a518f4b7cb968c2",
+  "homeworks\\02_vae\\report.md": "383338e57aa5055a185e1d09eb6a9ee6ee326823bcb896fab03c447e212abf00",
+  "homeworks\\02_vae\\gen_report.md": "82f50a80b69182dd1dad7fd1b324dc69b6aaaaa6d102443b05c7072a82642f7b",
+  "src\\gan\\__init__.py": "9e0838c680e773c10b7e727a7474ee9b1c7599700036d76a1309a04cab7a0c2d",
+  "src\\gan\\artifacts.py": "a34b7f1f0996f75389855b5a77612f88fcdfd04080b2108e6fe92b2b5f8ce1cf",
+  "src\\gan\\classifier.py": "1e48593da3218e070c3dcd2d6865ad4b4138978f015f48d6a3ae510b93e96007",
+  "src\\gan\\evaluate.py": "a3fc6a85c545bfda459cfbc9a8b150eaa1202c454d93d9b3e4a8e93ff545b52c",
+  "src\\gan\\evaluation.py": "868ddcd977a1fff6a8d03671562e59190accda0a9a0916271d5b8494b0e32660",
+  "src\\gan\\metrics.py": "a7280b83cc342de3bee335d66871b17894d64df7fc1c98dad49a6e038fb04b93",
+  "src\\gan\\models.py": "d1d56e0dc34552551ddf127919227e88b51113f2aa5054bd0f6b01e8af17caca",
+  "src\\gan\\prepare_evaluation.py": "95ee640fd648633b016e5a5d50b90a2f46d5d23ebd2054db594121ab7b912a93",
+  "src\\gan\\sample.py": "c9ca273b15c65662e4a3cd3c44f90e979e3892e2d3cc0dbcfe5d3a9a9e22df17",
+  "src\\gan\\select.py": "5fd6c0aac80f8db3d6b5799e013f36f303f174150f1a0ce8b0a228b5a5fbf282",
+  "src\\gan\\selection.py": "e18280faac8ffe122fbae4388e847d6b5692062c0afaee62eaece33d0c58dfed",
+  "src\\gan\\train.py": "44476d9c701b309be92f4fffb28ad34adc7d414d0ac8417df4ca48a552d8cbae",
+  "src\\gan\\train_classifier.py": "2e387a9c9e7871bb9993c04e5594770ec0e294bedc7491bd00d739e748266ec6",
+  "src\\gan\\training.py": "b40ad53e27a39d2809e3bbab0a4629e50eb20dec6f99cc9b84126c20771b9dff"
+}

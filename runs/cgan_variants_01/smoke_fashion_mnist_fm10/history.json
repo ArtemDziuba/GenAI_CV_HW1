@@ -1,0 +1,85 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "d_loss": 0.6791858971118927,
+      "d_real_loss": 0.6626712679862976,
+      "d_fake_loss": 0.6957005262374878,
+      "d_real_probability": 0.5155571401119232,
+      "d_fake_probability": 0.5012741386890411,
+      "d_accuracy": 0.51953125,
+      "g_loss": 0.6688907146453857,
+      "g_adversarial_loss": 0.6671165525913239,
+      "g_feature_matching_loss": 0.00017741664487402886,
+      "g_fake_probability": 0.5132247805595398,
+      "images": 128,
+      "batches": 2,
+      "g_updates": 2,
+      "d_updates": 2
+    },
+    "validation": {
+      "d_loss": 0.6610406637191772,
+      "d_real_loss": 0.6202630996704102,
+      "d_fake_loss": 0.7018182277679443,
+      "d_real_probability": 0.5378516316413879,
+      "d_fake_probability": 0.5043164491653442,
+      "d_accuracy": 0.5,
+      "g_loss": 0.6869285106658936,
+      "g_adversarial_loss": 0.684552013874054,
+      "g_feature_matching_loss": 0.00023764779325574636,
+      "g_fake_probability": 0.5043164491653442,
+      "images": 64,
+      "batches": 1,
+      "g_updates": 0,
+      "d_updates": 0
+    },
+    "evaluation": {
+      "kid": 35.91765691536778,
+      "real_samples": 5000,
+      "samples": 5000,
+      "class_counts": [
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        1639,
+        0,
+        3347,
+        0
+      ],
+      "confident_class_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        61,
+        0,
+        1053,
+        0
+      ],
+      "class_coverage": 3,
+      "confident_class_coverage": 2,
+      "coverage_min_count": 5,
+      "class_entropy": 0.6507504533902253,
+      "normalized_class_entropy": 0.2826173310034141,
+      "confident_class_entropy": 0.21229236753242842,
+      "normalized_confident_class_entropy": 0.09219740376951072,
+      "confidence_threshold": 0.8,
+      "mean_confidence": 0.6635381363034248,
+      "confident_fraction": 0.2228,
+      "low_confidence_fraction": 0.7772,
+      "mean_predictive_entropy": 0.8408737871032365,
+      "conditional_accuracy": 0.0978,
+      "confident_conditional_accuracy": 0.09964093357271095
+    },
+    "seconds": 0.83474349998869,
+    "preview": {
+      "preview_pixel_std": 0.021159116178750992,
+      "preview_pairwise_l1": 0.02405249342626455
+    }
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "kid": {
+    "epoch": 30,
+    "score": 4.810971972706746,
+    "criterion": "kid",
+    "evaluation": {
+      "kid": 4.810971972706746,
+      "real_samples": 5000,
+      "samples": 5000,
+      "class_counts": [
+        448,
+        500,
+        449,
+        435,
+        617,
+        541,
+        594,
+        417,
+        501,
+        498
+      ],
+      "confident_class_counts": [
+        284,
+        494,
+        295,
+        356,
+        440,
+        525,
+        293,
+        384,
+        485,
+        476
+      ],
+      "class_coverage": 10,
+      "confident_class_coverage": 10,
+      "coverage_min_count": 5,
+      "class_entropy": 2.2945999913658905,
+      "normalized_class_entropy": 0.9965321144254554,
+      "confident_class_entropy": 2.278370068558564,
+      "normalized_confident_class_entropy": 0.9894835485085178,
+      "confidence_threshold": 0.8,
+      "mean_confidence": 0.9070555994451046,
+      "confident_fraction": 0.8064,
+      "low_confidence_fraction": 0.1936,
+      "mean_predictive_entropy": 0.24227104167816155,
+      "conditional_accuracy": 0.867,
+      "confident_conditional_accuracy": 0.9444444444444444
+    },
+    "split": "validation",
+    "checkpoint": "best_kid.pt",
+    "sample_grid": "samples_best_kid.png",
+    "preview": {
+      "preview_pixel_std": 0.2610751688480377,
+      "preview_pairwise_l1": 0.2678676916628468
+    }
+  }
+}

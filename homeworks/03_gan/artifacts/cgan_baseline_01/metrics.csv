@@ -1,0 +1,3 @@
+dataset,best_epoch,kid,conditional_accuracy,mean_confidence,confident_fraction,confident_class_coverage,run,grid
+mnist,60,0.280272753308509,0.992,0.9901961387872696,0.9838,10,checkpoints/gan/cgan_mnist_gc256_dc64_b64_glr100u_dlr200u_kid_e60,homeworks/03_gan/artifacts/cgan_baseline_01/mnist_samples_10x10.png
+fashion_mnist,56,1.3987102431705978,0.9186,0.9334021365821361,0.8656,10,checkpoints/gan/cgan_fashion_mnist_v2_gc256_dc64_b64_glr100u_dlr200u_kid_e60,homeworks/03_gan/artifacts/cgan_baseline_01/fashion_mnist_samples_10x10.png

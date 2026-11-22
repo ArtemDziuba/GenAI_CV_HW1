@@ -1,0 +1,85 @@
+[
+  {
+    "epoch": 1,
+    "train": {
+      "d_loss": 0.6909939050674438,
+      "d_real_loss": 0.6885261535644531,
+      "d_fake_loss": 0.6934615969657898,
+      "d_real_probability": 0.5023249387741089,
+      "d_fake_probability": 0.5001571178436279,
+      "d_accuracy": 0.55078125,
+      "g_loss": 0.6889000833034515,
+      "g_adversarial_loss": 0.6889000833034515,
+      "g_feature_matching_loss": 0.0,
+      "g_fake_probability": 0.5021319389343262,
+      "images": 128,
+      "batches": 2,
+      "g_updates": 2,
+      "d_updates": 2
+    },
+    "validation": {
+      "d_loss": 0.6871667504310608,
+      "d_real_loss": 0.6794406175613403,
+      "d_fake_loss": 0.6948928833007812,
+      "d_real_probability": 0.5069150328636169,
+      "d_fake_probability": 0.5008718371391296,
+      "d_accuracy": 0.5031887888908386,
+      "g_loss": 0.6914052963256836,
+      "g_adversarial_loss": 0.6914052963256836,
+      "g_feature_matching_loss": 0.0,
+      "g_fake_probability": 0.5008718371391296,
+      "images": 64,
+      "batches": 1,
+      "g_updates": 0,
+      "d_updates": 0
+    },
+    "evaluation": {
+      "kid": 36.70884239070057,
+      "real_samples": 5000,
+      "samples": 5000,
+      "class_counts": [
+        0,
+        0,
+        375,
+        0,
+        0,
+        0,
+        586,
+        0,
+        4039,
+        0
+      ],
+      "confident_class_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1557,
+        0
+      ],
+      "class_coverage": 3,
+      "confident_class_coverage": 1,
+      "coverage_min_count": 5,
+      "class_entropy": 0.6179494588379058,
+      "normalized_class_entropy": 0.2683720400684031,
+      "confident_class_entropy": -0.0,
+      "normalized_confident_class_entropy": -0.0,
+      "confidence_threshold": 0.8,
+      "mean_confidence": 0.6690087293326855,
+      "confident_fraction": 0.3114,
+      "low_confidence_fraction": 0.6886,
+      "mean_predictive_entropy": 0.8608643446647407,
+      "conditional_accuracy": 0.098,
+      "confident_conditional_accuracy": 0.1014771997430957
+    },
+    "seconds": 0.8542277000087779,
+    "preview": {
+      "preview_pixel_std": 0.02129400707781315,
+      "preview_pairwise_l1": 0.02420206459201112
+    }
+  }
+]

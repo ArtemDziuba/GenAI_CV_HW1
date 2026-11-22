@@ -1,0 +1,4 @@
+Device cuda; parameters {'generator': 966977, 'discriminator': 142305}; output checkpoints\gan\smoke_fashion_conditional_patch_fm_01
+Periodic/last checkpoints only; validation GAN losses are diagnostics, not selection scores.
+train:   0%|          | 0/4 [00:00<?, ?it/s]train:  25%|██▌       | 1/4 [00:00<00:01,  2.80it/s]                                                    validation:   0%|          | 0/2 [00:00<?, ?it/s]                                                 Epoch 1/1: G 0.6885, D 0.6895; validation G 0.6944, D 0.6823
+Finished: checkpoints\gan\smoke_fashion_conditional_patch_fm_01

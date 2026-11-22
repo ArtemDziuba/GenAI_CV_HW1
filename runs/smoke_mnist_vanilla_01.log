@@ -1,0 +1,4 @@
+Device cuda; parameters {'generator': 765953, 'discriminator': 138561}; output checkpoints\gan\smoke_mnist_vanilla_01
+Periodic/last checkpoints only; validation GAN losses are diagnostics, not selection scores.
+train:   0%|          | 0/4 [00:00<?, ?it/s]train:  25%|██▌       | 1/4 [00:00<00:00,  3.20it/s]                                                    validation:   0%|          | 0/2 [00:00<?, ?it/s]                                                 Epoch 1/1: G 0.6704, D 0.6478; validation G 0.6902, D 0.5970
+Finished: checkpoints\gan\smoke_mnist_vanilla_01

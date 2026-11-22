@@ -1,0 +1,135 @@
+{
+  "generator": {
+    "latent_dim": 100,
+    "channels": 256,
+    "conditional": true,
+    "embedding_dim": 32,
+    "num_classes": 10
+  },
+  "discriminator": {
+    "channels": 64,
+    "conditional": true,
+    "head": "global",
+    "num_classes": 10
+  },
+  "arguments": {
+    "dataset": "fashion_mnist",
+    "evaluation_set": "data\\gan_evaluation\\fashion_mnist_v2",
+    "resume": null,
+    "evaluation_seed": 44,
+    "evaluation_batch_size": 128,
+    "kid_block_size": 512,
+    "confidence_threshold": 0.8,
+    "coverage_min_count": 5,
+    "conditional": true,
+    "discriminator": "global",
+    "feature_matching_weight": 0.0,
+    "latent_dim": 100,
+    "generator_channels": 256,
+    "discriminator_channels": 64,
+    "embedding_dim": 32,
+    "epochs": 60,
+    "batch_size": 64,
+    "generator_lr": 0.0001,
+    "discriminator_lr": 0.0002,
+    "adam_beta1": 0.5,
+    "adam_beta2": 0.999,
+    "discriminator_steps": 1,
+    "sample_every": 5,
+    "sample_count": 64,
+    "samples_per_class": 10,
+    "sample_seed": 43,
+    "seed": 42,
+    "deterministic": false,
+    "validation_fraction": 0.1,
+    "num_workers": 0,
+    "train_limit": null,
+    "validation_limit": null,
+    "data_root": "data",
+    "download": false,
+    "device": "cuda",
+    "output": "checkpoints\\gan\\cgan_fashion_mnist_v2_gc256_dc64_b64_glr100u_dlr200u_kid_e60"
+  },
+  "parameter_count": {
+    "generator": 5439809,
+    "discriminator": 147425
+  },
+  "split_sizes": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000
+  },
+  "class_names": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "preprocessing": "original grayscale [0,1] mapped to [-1,1]; no binarization",
+  "objectives": {
+    "discriminator": "0.5 * (mean softplus(-D(real)) + mean softplus(D(fake)))",
+    "generator": "mean softplus(-D(fake)) + feature_matching_weight * feature_MSE",
+    "feature_matching_weight": 0.0,
+    "feature_MSE": "MSE of batch-mean penultimate features, averaged over channels/spatial positions",
+    "patch_reduction": "BCE averaged over images and patches"
+  },
+  "evaluation_protocol": {
+    "metric": "dataset-classifier polynomial MMD (KID-style, not Inception KID)",
+    "kernel": "(x.T@y/feature_dim + 1)^3",
+    "estimator": "full-sample unbiased U-statistic; no clipping or random subsets",
+    "feature_normalization": "none; raw frozen pre-logit features",
+    "bundle_id": "f8145cbb71b9a0cbc3934c950f580d1b25115e1105e62814d908e15ea47d62f1",
+    "dataset": "fashion_mnist",
+    "classifier_sha256": "3c251d53affa4d047cc126deebbabd676f223bf688a886748f5a521f2d5ac2b0",
+    "reference_sha256": "2fe412569aefbccb73a44a3e8229a2a9786e7e54f2444f872c3bf594245d2b9d",
+    "feature_dim": 256,
+    "preprocessing": "original grayscale [0,1]; no binarization or per-image normalization",
+    "real_count": 5000,
+    "generated_count": 5000,
+    "noise_seed": 44,
+    "latent_dim": 100,
+    "conditional": true,
+    "conditional_label_policy": "fixed real-reference labels",
+    "reference_class_counts": [
+      540,
+      498,
+      516,
+      476,
+      513,
+      508,
+      508,
+      455,
+      496,
+      490
+    ],
+    "batch_size": 128,
+    "confidence_threshold": 0.8,
+    "coverage_min_count": 5,
+    "block_size": 512,
+    "reference_classifier_accuracy": 0.9488000273704529
+  },
+  "data_split_seed": 42,
+  "checkpoint_selection": {
+    "split": "validation",
+    "criteria": {
+      "kid": "kid"
+    },
+    "files": [
+      "best_kid.pt"
+    ],
+    "ties": "keep earliest epoch",
+    "snapshots": "paired G/D weights and both optimizers at the selected epoch"
+  },
+  "runtime": {
+    "torch": "2.15.0+cu134",
+    "device": "cuda",
+    "cuda": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  }
+}

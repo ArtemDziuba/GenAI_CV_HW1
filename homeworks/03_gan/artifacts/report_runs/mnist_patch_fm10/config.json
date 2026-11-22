@@ -1,0 +1,135 @@
+{
+  "generator": {
+    "latent_dim": 100,
+    "channels": 256,
+    "conditional": true,
+    "embedding_dim": 32,
+    "num_classes": 10
+  },
+  "discriminator": {
+    "channels": 64,
+    "conditional": true,
+    "head": "patch",
+    "num_classes": 10
+  },
+  "arguments": {
+    "dataset": "mnist",
+    "evaluation_set": "data\\gan_evaluation\\mnist",
+    "resume": null,
+    "evaluation_seed": 44,
+    "evaluation_batch_size": 128,
+    "kid_block_size": 512,
+    "confidence_threshold": 0.8,
+    "coverage_min_count": 5,
+    "conditional": true,
+    "discriminator": "patch",
+    "feature_matching_weight": 10.0,
+    "latent_dim": 100,
+    "generator_channels": 256,
+    "discriminator_channels": 64,
+    "embedding_dim": 32,
+    "epochs": 30,
+    "batch_size": 64,
+    "generator_lr": 0.0001,
+    "discriminator_lr": 0.0002,
+    "adam_beta1": 0.5,
+    "adam_beta2": 0.999,
+    "discriminator_steps": 1,
+    "sample_every": 5,
+    "sample_count": 64,
+    "samples_per_class": 10,
+    "sample_seed": 43,
+    "seed": 42,
+    "deterministic": false,
+    "validation_fraction": 0.1,
+    "num_workers": 0,
+    "train_limit": null,
+    "validation_limit": null,
+    "data_root": "data",
+    "download": false,
+    "device": "cuda",
+    "output": "checkpoints\\gan\\cgan_mnist_gc256_dc64_b64_glr100u_dlr200u_patch_fm10_kid_e30"
+  },
+  "parameter_count": {
+    "generator": 5439809,
+    "discriminator": 142305
+  },
+  "split_sizes": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000
+  },
+  "class_names": [
+    "0 - zero",
+    "1 - one",
+    "2 - two",
+    "3 - three",
+    "4 - four",
+    "5 - five",
+    "6 - six",
+    "7 - seven",
+    "8 - eight",
+    "9 - nine"
+  ],
+  "preprocessing": "original grayscale [0,1] mapped to [-1,1]; no binarization",
+  "objectives": {
+    "discriminator": "0.5 * (mean softplus(-D(real)) + mean softplus(D(fake)))",
+    "generator": "mean softplus(-D(fake)) + feature_matching_weight * feature_MSE",
+    "feature_matching_weight": 10.0,
+    "feature_MSE": "MSE of batch-mean penultimate features, averaged over channels/spatial positions",
+    "patch_reduction": "BCE averaged over images and patches"
+  },
+  "evaluation_protocol": {
+    "metric": "dataset-classifier polynomial MMD (KID-style, not Inception KID)",
+    "kernel": "(x.T@y/feature_dim + 1)^3",
+    "estimator": "full-sample unbiased U-statistic; no clipping or random subsets",
+    "feature_normalization": "none; raw frozen pre-logit features",
+    "bundle_id": "94c0bbc4304c5143291c56fd05e538cd8998e8e499e2a4438b2eca8aba9397c9",
+    "dataset": "mnist",
+    "classifier_sha256": "4003c705716912baaefaad462223c5cccf62b938d6f19576687bb96673cf6f52",
+    "reference_sha256": "10bcadc97c4ef72c1c5c2a9a6f873f2a2b3d2f077ccb1899b401433b37959e20",
+    "feature_dim": 128,
+    "preprocessing": "original grayscale [0,1]; no binarization or per-image normalization",
+    "real_count": 5000,
+    "generated_count": 5000,
+    "noise_seed": 44,
+    "latent_dim": 100,
+    "conditional": true,
+    "conditional_label_policy": "fixed real-reference labels",
+    "reference_class_counts": [
+      472,
+      560,
+      478,
+      510,
+      505,
+      447,
+      508,
+      553,
+      490,
+      477
+    ],
+    "batch_size": 128,
+    "confidence_threshold": 0.8,
+    "coverage_min_count": 5,
+    "block_size": 512,
+    "reference_classifier_accuracy": 0.9869999885559082
+  },
+  "data_split_seed": 42,
+  "checkpoint_selection": {
+    "split": "validation",
+    "criteria": {
+      "kid": "kid"
+    },
+    "files": [
+      "best_kid.pt"
+    ],
+    "ties": "keep earliest epoch",
+    "snapshots": "paired G/D weights and both optimizers at the selected epoch"
+  },
+  "runtime": {
+    "torch": "2.15.0+cu134",
+    "device": "cuda",
+    "cuda": "13.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  }
+}

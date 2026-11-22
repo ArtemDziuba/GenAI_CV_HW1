@@ -1,0 +1,46 @@
+[
+  {
+    "epoch": 1,
+    "kid": 35.91765691536778,
+    "real_samples": 5000,
+    "samples": 5000,
+    "class_counts": [
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      1639,
+      0,
+      3347,
+      0
+    ],
+    "confident_class_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      61,
+      0,
+      1053,
+      0
+    ],
+    "class_coverage": 3,
+    "confident_class_coverage": 2,
+    "coverage_min_count": 5,
+    "class_entropy": 0.6507504533902253,
+    "normalized_class_entropy": 0.2826173310034141,
+    "confident_class_entropy": 0.21229236753242842,
+    "normalized_confident_class_entropy": 0.09219740376951072,
+    "confidence_threshold": 0.8,
+    "mean_confidence": 0.6635381363034248,
+    "confident_fraction": 0.2228,
+    "low_confidence_fraction": 0.7772,
+    "mean_predictive_entropy": 0.8408737871032365,
+    "conditional_accuracy": 0.0978,
+    "confident_conditional_accuracy": 0.09964093357271095
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "epoch": 27,
+  "train": null,
+  "validation": {
+    "d_loss": 0.682338225364685,
+    "d_real_loss": 0.6130716304779052,
+    "d_fake_loss": 0.7516048253377279,
+    "d_real_probability": 0.5513313142458598,
+    "d_fake_probability": 0.5209959303538004,
+    "d_accuracy": 0.5524166668256124,
+    "g_loss": 0.6651222360928853,
+    "g_adversarial_loss": 0.6651222360928853,
+    "g_feature_matching_loss": 0.0,
+    "g_fake_probability": 0.5209959303538004,
+    "images": 6000,
+    "batches": 94,
+    "g_updates": 0,
+    "d_updates": 0
+  },
+  "evaluation": {
+    "kid": 11.83043115761464,
+    "real_samples": 5000,
+    "samples": 5000,
+    "class_counts": [
+      476,
+      550,
+      479,
+      412,
+      469,
+      564,
+      603,
+      341,
+      566,
+      540
+    ],
+    "confident_class_counts": [
+      199,
+      521,
+      213,
+      257,
+      277,
+      454,
+      229,
+      265,
+      459,
+      448
+    ],
+    "class_coverage": 10,
+    "confident_class_coverage": 10,
+    "coverage_min_count": 5,
+    "class_entropy": 2.2904285850199475,
+    "normalized_class_entropy": 0.9947204956676362,
+    "confident_class_entropy": 2.242192744311562,
+    "normalized_confident_class_entropy": 0.97377193621802,
+    "confidence_threshold": 0.8,
+    "mean_confidence": 0.8378100525408984,
+    "confident_fraction": 0.6644,
+    "low_confidence_fraction": 0.3356,
+    "mean_predictive_entropy": 0.4205939597600389
+  }
+}
