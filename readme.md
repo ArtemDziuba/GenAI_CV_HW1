@@ -1,7 +1,5 @@
 # Generative Models Reports
 
-This document summarizes the three generative modeling assignments on MNIST Digits and Fashion-MNIST. Assignment requirements are condensed from [readme.md](readme.md); detailed experiments, training curves, and additional figures are available in the linked reports.
-
 ## Normalizing Flows — 5 pt.
 
 > **Task: Implement and evaluate RealNVP on MNIST datasets.**
